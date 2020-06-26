@@ -14,19 +14,19 @@
             ,{
                 "name": "C/C++",
                 "years": 2,
-                "proficiency": 50
+                "proficiency": 40
             }
         ]
         ,"databases":[
             {
                 "name": "SQL - MySQL, SQL Server, Oracle SQL",
                 "years": 2,
-                "proficiency": 40
+                "proficiency": 70
             }
             ,{
                 "name": "NoSQL - MongoDB",
-                "years": 0.4,
-                "proficiency": 10
+                "years": 0.25,
+                "proficiency": 50
             }
         ]
         
@@ -34,27 +34,27 @@
             {
                 "name": "Angular",
                 "years": 4,
-                "proficiency": 30
+                "proficiency": 35
             }
             ,{
                 "name": "React",
                 "years": 4,
-                "proficiency": 30
+                "proficiency": 40
             }
             ,{
                 "name": "JQuery",
                 "years": 12,
-                "proficiency": 30
+                "proficiency": 50
             }
             ,{
                 "name": "Javascript",
-                "years": 2,
-                "proficiency": 25
+                "years": 16,
+                "proficiency": 50
             }
             ,{
                 "name": "HTML/CSS",
-                "years": 4,
-                "proficiency": 33
+                "years": 24,
+                "proficiency": 70
             }
         ]
 
