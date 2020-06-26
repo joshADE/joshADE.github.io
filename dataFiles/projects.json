@@ -1,0 +1,85 @@
+{
+"cataloge":
+{
+    "projects": [
+        
+    {
+
+        "name": "Timetable Transfer",
+        "description": "Transfers school timetable to Google Calender",
+        "details": "Uses a simple GUI inteface to read timetable content from the site and allows the user to convert it into Google Calender format.",
+        "language":"C#/WPF",
+        "image": "TT.png",
+        "Date-Began":"Jan 24, 2020",
+        "status": "complete",
+        "Date-Finished": "April 23, 2020",
+        "url-link":"https://github.com/joshADE/Timetable-Transfer",
+        "image-description":"screenshot of the applications screen"
+    },
+    {
+
+        "name": "Poker C++ With GUI",
+        "description": "5-hand poker",
+        "details": "An extention of the original one made with the GUI Library SGL",
+        "language":"C++/SDL",
+        "image": "Poker-2.png",
+        "Date-Began":"Feb 24, 2019",
+        "status": "complete",
+        "Date-Finished": "Jun 2, 2019",
+        "url-link":"https://github.com/joshADE",
+        "image-description":"screenshot of a simpliflied poker game with cards"
+    },
+    {
+
+        "name": "GPA-Tracker",
+        "description": "Helps keep track of GPA throughout a students's program",
+        "details": "Made with react and makes it easier to viualize a program map as well as track grades",
+        "language":"Javascript/React",
+        "image": "gt-transfer.png",
+        "Date-Began":"Apr 31, 2020",
+        "status": "complete",
+        "Date-Finished": "May 26, 2019",
+        "url-link":"https://github.com/joshADE/Grade-Tracker",
+        "image-description":"screenshot of a the main applications window"
+    },
+    {
+        "name": "SimplyCalc",
+        "description": "Android Calculator Application",
+        "details": "A calculator made using android studio that allows for basic functions.",
+        "language":"Java 8.0",
+        "image": "NA",
+        "Date-Began":"NA",
+        "status": "partially-complete",
+        "Date-Finished": "NA",
+        "url-link":"https://github.com/joshADE",
+        "image-description":"screenshot of calculator project"
+    }
+    ,{
+
+        "name": "Re:2048",
+        "description": "Sliding Tile Game",
+        "details": "A version of the popular mobile tile-based game that was released in 2015. I created it using JavaFX GUI library(most recent library) and Java. I also made a few modifications to it such as automatic resizing of the tiles, and custom tiles.",
+        "language":"Java 8.0",
+        "image": "re2048img.png",
+        "Date-Began":"2016",
+        "status": "partially-complete",
+        "Date-Finished": "NA",
+        "url-link":"https://github.com/joshADE",
+        "image-description":"screenshot of Re:2048"
+    }
+    ,{
+
+        "name": "Poker C",
+        "description": "5-hand poker",
+        "details": "A version of the popular card game poker made with c++. It can keep track of user scores.",
+        "language":"C++",
+        "image": "poker.png",
+        "Date-Began":"Feb 24, 2019",
+        "status": "complete",
+        "Date-Finished": "Feb 25, 2019",
+        "url-link":"https://github.com/joshADE",
+        "image-description":"screenshot of command line poker"
+    }
+    ]
+}
+}

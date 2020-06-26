@@ -1,0 +1,62 @@
+{
+    "skills":{
+        "languages":[
+            {
+                "name": "Java",
+                "years": 8,
+                "proficiency": 80
+            }
+            ,{
+                "name": "C#",
+                "years": 4,
+                "proficiency": 50
+            }
+            ,{
+                "name": "C/C++",
+                "years": 2,
+                "proficiency": 50
+            }
+        ]
+        ,"databases":[
+            {
+                "name": "SQL - MySQL, SQL Server, Oracle SQL",
+                "years": 2,
+                "proficiency": 40
+            }
+            ,{
+                "name": "NoSQL - MongoDB",
+                "years": 0.4,
+                "proficiency": 10
+            }
+        ]
+        
+        ,"frontend":[
+            {
+                "name": "Angular",
+                "years": 4,
+                "proficiency": 30
+            }
+            ,{
+                "name": "React",
+                "years": 4,
+                "proficiency": 30
+            }
+            ,{
+                "name": "JQuery",
+                "years": 12,
+                "proficiency": 30
+            }
+            ,{
+                "name": "Javascript",
+                "years": 2,
+                "proficiency": 25
+            }
+            ,{
+                "name": "HTML/CSS",
+                "years": 4,
+                "proficiency": 33
+            }
+        ]
+
+    }
+}
