@@ -438,7 +438,7 @@ h1,h2,h3,h4,h5,h6{
 
 #main-content > div > h2{
   text-decoration: underline;
-  padding-bottom: 6rem;
+  padding-bottom: 3rem;
 }
 
 @media only screen and (max-width: 600px) {
@@ -773,11 +773,22 @@ body::-webkit-scrollbar-thumb
     flex-wrap: wrap;
 
   }
-
-  #skills table {
-    font-size: 15px !important;
-    margin:0px;
+  
+  #skills #header3{
+    width:100%;
+    text-align: center;
   }
+
+  #skills h5{
+    text-decoration: underline;
+  }
+
+  #skills-summary {
+    margin:0;
+    text-align: left;
+  }
+
+
   /* Arrow List style */
   #skills-summary ul {
     list-style: none;
@@ -800,41 +811,29 @@ body::-webkit-scrollbar-thumb
      left: -20px;
      transform: translateY(-50%) rotate(-45deg);
   }
-
-    /* Arrow List style */
+    /* End of Arrow List style */
   
 
-  #skills #header3{
-    width:100%;
-    text-align: center;
+  #tab-area {
+    width: 100%;
+    margin: 0;
   }
-
-  #skills h5{
-    text-decoration: underline;
-  }
-
-  #skills table
-  {
+  
+  #skills table {
     font-size: 15px;
+    margin:0px;
+    border-radius: 5px;
   }
   
-  #header3{
-    grid-area: title;
-  }
-  
-  
-  #table-lang{
-    grid-area: lang;
-  }
-  
-  
-  #table-db{
-    grid-area: db;
+  @media only screen and (max-width: 600px) {
+
+    #skills table
+    {
+      font-size: 2vw;
+      
+    }
   }
 
-  #skills-summary{
-    text-align: left;
-  }
 /* Style the tab */
 .tab {
   overflow: hidden;
@@ -871,11 +870,6 @@ body::-webkit-scrollbar-thumb
   border-top: none;
 } 
 
-  .skill-tables{
-    border-radius: 5px;
-  }
-
-
   /* Resume */
   
   #resume-image{
@@ -891,6 +885,11 @@ body::-webkit-scrollbar-thumb
     justify-content: center ;
     
   }
+
+  #resume-downloads form { 
+    padding: 0;
+  }
+
   .resume-downloads-items{
     border-radius: 0 0 5px 5px;
     border: 2px solid black;
@@ -903,7 +902,7 @@ body::-webkit-scrollbar-thumb
       width: 100%;
     }
     .resume-downloads-items{
-      font-size: 15px;
+      font-size: 2vw;
     }
   }
 

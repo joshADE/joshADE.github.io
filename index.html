@@ -195,35 +195,18 @@
     </ul>
   </div>
 
-  <!-- Tab links -->
-  <div class="tab">
-    <button class="tablinks" onclick="openSection(event, 'Front')">Web</button>
-    <button class="tablinks" onclick="openSection(event, 'Back')">Languages</button>
-    <button class="tablinks" onclick="openSection(event, 'Database')">Databases</button>
-  </div>
+  <div id="tab-area">
+    <!-- Tab links -->
+    <div class="tab">
+      <button class="tablinks" onclick="openSection(event, 'Front')">Web</button>
+      <button class="tablinks" onclick="openSection(event, 'Back')">Languages</button>
+      <button class="tablinks" onclick="openSection(event, 'Database')">Databases</button>
+    </div>
 
-  <!-- Tab content -->
-  <section id="Back" class="tabcontent">
-    
-    <table id="table-lang" class="table table-dark skill-tables">
-      <thead>
-      <tr>
-        <th scope="col">Language</th>
-        <th scope="col">Years of Experience</th>
-        <th scope="col">Proficiency(%)</th>
-      </tr>
-    </thead>
-    <tbody id="lang-body">
-    
-    </tbody>
-    </table>
-
-  </section>
-
-
-    <section id="Database" class="tabcontent">
-
-      <table id="table-db" class="table table-dark skill-tables">
+    <!-- Tab content -->
+    <section id="Back" class="tabcontent">
+      
+      <table id="table-lang" class="table table-dark skill-tables">
         <thead>
         <tr>
           <th scope="col">Language</th>
@@ -231,28 +214,47 @@
           <th scope="col">Proficiency(%)</th>
         </tr>
       </thead>
-      <tbody id="db-body">
+      <tbody id="lang-body">
       
       </tbody>
       </table>
 
     </section>
 
-    <section id="Front" class="tabcontent">
-      <table id="table-frontend" class="table table-dark skill-tables">
-        <thead>
+
+      <section id="Database" class="tabcontent">
+
+        <table id="table-db" class="table table-dark skill-tables">
+          <thead>
+          <tr>
+            <th scope="col">Language</th>
+            <th scope="col">Years of Experience</th>
+            <th scope="col">Proficiency(%)</th>
+          </tr>
+        </thead>
+        <tbody id="db-body">
         
-        <tr>
-          <th scope="col">Framework/Library</th>
-          <th scope="col">Months</th>
-          <th scope="col">Proficiency(%)</th>
-        </tr>
-      </thead>
-      <tbody id="db-frontend">
-        
-      </tbody>
-      </table>
-    </section>
+        </tbody>
+        </table>
+
+      </section>
+
+      <section id="Front" class="tabcontent">
+        <table id="table-frontend" class="table table-dark skill-tables">
+          <thead>
+          
+          <tr>
+            <th scope="col">Framework/Library</th>
+            <th scope="col">Months</th>
+            <th scope="col">Proficiency(%)</th>
+          </tr>
+        </thead>
+        <tbody id="db-frontend">
+          
+        </tbody>
+        </table>
+      </section>
+    </div>
     
   </div>
 
@@ -260,17 +262,17 @@
   <div id="resume">
 
       <h2 class="section-header" id="header4">Resume</h2>
-      <p>Interested in hiring me? Here is my resume...</p>
+      <h3>Interested in hiring me? Here is my resume...</h3>
       <div id="resume-area">
-        <div>
+        
           <img src="documents/Resume.PNG" alt="image of my resume" id="resume-image" />
-        </div>
+        
         <div id="resume-downloads">
           <form method="get" action="documents/Resume.pdf">
-            <input  class="resume-downloads-items" type="submit" value="Download PDF" />
+            <input class="resume-downloads-items" type="submit" value="PDF" />
           </form>
           <form method="get" action="documents/Resume.docx">
-            <input  class="resume-downloads-items" type="submit" value="Download Word" />
+            <input class="resume-downloads-items" type="submit" value="Word" />
           </form>
           
         </div>
