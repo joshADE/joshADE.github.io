@@ -178,7 +178,7 @@ function loadProjects(content) {
 
             
             $(".carousel-inner").append(`
-            <div class="carousel-item bg-dark" style="">
+            <div class="carousel-item" style="">
                 <img src="${pArray[i].image}"
                 class=" project-imgs" 
                 alt="${pArray[i].imageAlt}">
@@ -235,7 +235,7 @@ function loadProjects(content) {
 
 function loadJourney(content){
     let events = content.journey.events;
-
+    events = events.reverse();
     for (let i = 0 ; i < events.length; i++){
         $("#journey-list").append(`          
             <div class="journey-item"><button class="list-date accordion">${events[i].date} - ${events[i].summary}<span></span></button><div class="panel">${events[i].description}</div></div>
@@ -269,9 +269,38 @@ $(document).ready(function() {
     window.onresize = function() {
         navScroll(window.pageYOffset);
     };
-    window.onscroll = function() {
+    var siteNav = document.querySelector("#site-nav");
+        
+    window.onscroll =  function() {
         navScroll(window.pageYOffset);
+        
+        siteNav.classList.toggle("sticky", window.scrollY > 0);
     };
+
+    
+  const navbarBtn = document.querySelector('.navbar__btn');
+  const navbarLinks = document.querySelector('.navbar__links');
+  
+
+
+    navbarBtn.addEventListener('click', function(){
+        let value = navbarLinks.classList.contains('navbar_collapse');
+     
+        if (value){
+           navbarLinks.classList.remove('navbar_collapse');
+           navbarBtn.classList.remove('change');
+        }else{
+           navbarLinks.classList.add('navbar_collapse');
+           navbarBtn.classList.add('change');
+     
+        }
+     });
+
+     window.addEventListener("scroll", function(){
+        var header = document.querySelector("#site-nav");
+        header.classList.toggle("sticky", window.scrollY > 0);
+     })
+    
 
     openSection
         ({
@@ -279,6 +308,9 @@ $(document).ready(function() {
         }, 
         'Front'
         );
+
+
+
 });
 
 function navScroll(offset) 
@@ -381,5 +413,14 @@ function openSection(evt, sectionName) {
     document.getElementById(sectionName).style.display = "block";
     evt.currentTarget.className += " active";
   } 
+
+  function topNavShow() {
+    var x = document.getElementById("site-nav");
+    if (x.classList.contains("responsive")) {
+      x.classList.remove("responsive");
+    } else {
+        x.classList.add("responsive");
+    }
+  }
 
 
