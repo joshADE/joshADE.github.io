@@ -210,11 +210,13 @@ h4.masthead-brand {
   
   font-weight: 500;
   font-size: 1.1rem;
+  color: #fff;
+  font-weight: bold;
 }
 
 .navbar__links a:hover {
   text-decoration: underline;
-  color: #fff;
+
 }
 
 
@@ -595,9 +597,24 @@ body::-webkit-scrollbar-thumb
     
   }
 
-  #btnMoreProj{
+  #btnMoreProj, #btnLessProj{
     background-color:var(--primary-color2);
     color: #ccc;
+  }
+
+  #main-content > div#projs {
+    min-height: 0;
+    overflow-y: auto;
+    transition: all 0.5s ease;
+  }
+  #main-content > div#projs {
+    height: 0;
+    padding: 0;
+  }
+
+  #main-content > div#projs.show {
+    height: 1400px;
+    padding: 5%;
   }
 
 

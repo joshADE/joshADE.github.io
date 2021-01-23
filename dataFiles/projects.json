@@ -18,6 +18,32 @@
     },
     {
 
+        "name": "Youtube Ref",
+        "description": "Saves points in videos to watch later",
+        "details": "An MERN stack app for managing reference points on Youtube videos",
+        "language":"Javascript/React",
+        "image": "Youtube-Ref.PNG",
+        "Date-Began":"Dec 9, 2020",
+        "status": "complete",
+        "Date-Finished": "Jan 22, 2021",
+        "url-link":"https://github.com/joshADE/Youtube-Ref-Frontend",
+        "image-description":"screenshot of a main home window"
+    },
+    {
+
+        "name": "GPA-Tracker",
+        "description": "Helps keep track of GPA throughout a students's program",
+        "details": "Made with react and makes it easier to viualize a program map as well as track grades",
+        "language":"Javascript/React",
+        "image": "gt-transfer2.PNG",
+        "Date-Began":"Apr 31, 2020",
+        "status": "complete",
+        "Date-Finished": "May 26, 2019",
+        "url-link":"https://github.com/joshADE/Grade-Tracker",
+        "image-description":"screenshot of a the main applications window"
+    },
+    {
+
         "name": "Poker C++ With GUI",
         "description": "5-hand poker",
         "details": "An extention of the original one made with the GUI Library SGL",
@@ -28,19 +54,6 @@
         "Date-Finished": "Jun 2, 2019",
         "url-link":"https://github.com/joshADE",
         "image-description":"screenshot of a simpliflied poker game with cards"
-    },
-    {
-
-        "name": "GPA-Tracker",
-        "description": "Helps keep track of GPA throughout a students's program",
-        "details": "Made with react and makes it easier to viualize a program map as well as track grades",
-        "language":"Javascript/React",
-        "image": "gt-transfer.PNG",
-        "Date-Began":"Apr 31, 2020",
-        "status": "complete",
-        "Date-Finished": "May 26, 2019",
-        "url-link":"https://github.com/joshADE/Grade-Tracker",
-        "image-description":"screenshot of a the main applications window"
     },
     {
         "name": "SimplyCalc",

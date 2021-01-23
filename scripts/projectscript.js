@@ -249,6 +249,7 @@ function loadJourney(content){
 
 
 
+
 $(document).ready(function() {
 
     $.getJSON("dataFiles/projects.json", loadProjects);
@@ -310,8 +311,19 @@ $(document).ready(function() {
         );
 
 
-
+        
 });
+
+function toggleProj(){
+    const allProj = document.querySelector('#projs');
+
+    if (allProj.classList.contains('show'))
+        allProj.classList.remove('show');
+    else
+        allProj.classList.add('show');
+
+}
+
 
 function navScroll(offset) 
 {
