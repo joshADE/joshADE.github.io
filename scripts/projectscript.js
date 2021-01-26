@@ -28,7 +28,7 @@
 
 
 	class Project{
-		constructor(projectName, description, details, startDate, endDate, language, image, imageAlt, status, url){
+		constructor(projectName, description, details, startDate, endDate, language, image, imageAlt, status, url, demo){
 			this.projectName = projectName;
             this.description = description;
             this.details = details;
@@ -39,6 +39,7 @@
             this.endDate = endDate;
             this.status = status;
             this.url = url;
+            this.demo = demo;
 		}
     }
     
@@ -145,7 +146,8 @@ function loadProjects(content) {
                     imgPath + projects[x].image,
                     projects[x]["image-description"],
                     projects[x].status,
-                    projects[x]["url-link"]
+                    projects[x]["url-link"],
+                    projects[x].demo
                 ));
                 /*
                 $("#projectlist").append(
@@ -172,23 +174,26 @@ function loadProjects(content) {
                 break;
             }
              
-            $(".carousel-indicators").append(`
-                <li data-target="#carouselProjects" data-slide-to="${i}" class=""></li>
-            `);
+            
 
             
-            $(".carousel-inner").append(`
-            <div class="carousel-item" style="">
+            $("#featured-projects").append(`
+            <div class="featured-item" style="">
                 <img src="${pArray[i].image}"
                 class=" project-imgs" 
                 alt="${pArray[i].imageAlt}">
                 
-                <div class='carousel-caption d-none d-md-block'>
-                    <h3>${pArray[i].projectName} - ${pArray[i].description} </h3>
-                    <span class='carousel-language'><strong>Language(s):</strong> ${pArray[i].language}</span><br>
+                <div class='item-caption'>
+                    <h5>${pArray[i].projectName} - ${pArray[i].description} </h5>
+                    <span class='item-language'><strong>Technologies:</strong> ${pArray[i].language}</span><br>
                 
                       
-                    <span class="caro-text"><strong>Details:</strong> ${pArray[i].details}</span><br>
+                    <span class="item-text">${pArray[i].details}</span><br>
+                    <div class='item-links'>
+                        <a href=${pArray[i].url} class='github-link'>Github</a>
+                        ${pArray[i].demo !== 'NA'? 
+                        `<a href=${pArray[i].demo} class='demo-link'>Demo</a>`:""}
+                    </div>
                 </div>
                 
                 
@@ -197,16 +202,12 @@ function loadProjects(content) {
         }
 
 
-        $(".carousel-indicators li:nth-child(1)").addClass("active");
-        $("#projectlist").css("height", "100vh");
-        console.log(pArray);
         
-        $(".carousel-item:first-child").addClass("active");
-       
     
+        pArray = pArray.filter((p, ind) => ind > 2);
         pArray.sort((p1,p2) => p1.projectName < p2.projectName);
         pArray.forEach((proj,index) => {
-            let image = (proj.image != null)?
+            let image = (proj.image !== 'NA')?
             `<img class="card-img-top" src=${proj.image} alt=${proj.imageAlt} />`
             :
             ""
@@ -221,7 +222,7 @@ function loadProjects(content) {
                 <div class="card-body">
                     <h5 class="card-title">${proj.projectName}</h5>
                     <p class="card-text">${proj.description}</p>
-                    <p class="card-text"><small class="text-muted">Language(s):${proj.language}</small></p>
+                    <p class="card-text"><small class="text-muted">Technologies:${proj.language}</small></p>
                     <a href="${proj.url}" class="card-link"><i class="fab fa-github"></i> See on Github</a>
                 </div>
             

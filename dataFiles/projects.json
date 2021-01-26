@@ -14,20 +14,22 @@
         "status": "complete",
         "Date-Finished": "April 23, 2020",
         "url-link":"https://github.com/joshADE/Timetable-Transfer",
-        "image-description":"screenshot of the applications screen"
+        "image-description":"screenshot of the applications screen",
+        "demo":"NA"
     },
     {
 
         "name": "Youtube Ref",
         "description": "Saves points in videos to watch later",
         "details": "An MERN stack app for managing reference points on Youtube videos",
-        "language":"Javascript/React",
+        "language":"Javascript/React, MongoDB, NodeJS",
         "image": "Youtube-Ref.PNG",
         "Date-Began":"Dec 9, 2020",
         "status": "complete",
         "Date-Finished": "Jan 22, 2021",
         "url-link":"https://github.com/joshADE/Youtube-Ref-Frontend",
-        "image-description":"screenshot of a main home window"
+        "image-description":"screenshot of a main home window",
+        "demo":"https://youtube-ref.netlify.app/#/"
     },
     {
 
@@ -40,7 +42,8 @@
         "status": "complete",
         "Date-Finished": "May 26, 2019",
         "url-link":"https://github.com/joshADE/Grade-Tracker",
-        "image-description":"screenshot of a the main applications window"
+        "image-description":"screenshot of a the main applications window",
+        "demo": "https://joshade.github.io/Grade-Tracker/#/"
     },
     {
 
@@ -53,19 +56,21 @@
         "status": "complete",
         "Date-Finished": "Jun 2, 2019",
         "url-link":"https://github.com/joshADE",
-        "image-description":"screenshot of a simpliflied poker game with cards"
+        "image-description":"screenshot of a simpliflied poker game with cards",
+        "demo":"NA"
     },
     {
         "name": "SimplyCalc",
         "description": "Android Calculator Application",
         "details": "A calculator made using android studio that allows for basic functions.",
         "language":"Java 8.0",
-        "image": "NA",
+        "image": "calcpro2.jpg  ",
         "Date-Began":"NA",
         "status": "partially-complete",
         "Date-Finished": "NA",
         "url-link":"https://github.com/joshADE",
-        "image-description":"screenshot of calculator project"
+        "image-description":"screenshot of calculator project",
+        "demo":"NA"
     }
     ,{
 
@@ -73,12 +78,13 @@
         "description": "Sliding Tile Game",
         "details": "A version of the popular mobile tile-based game that was released in 2015. I created it using JavaFX GUI library(most recent library) and Java. I also made a few modifications to it such as automatic resizing of the tiles, and custom tiles.",
         "language":"Java 8.0",
-        "image": "re2048img.PNG",
+        "image": "NA",
         "Date-Began":"2016",
         "status": "partially-complete",
         "Date-Finished": "NA",
         "url-link":"https://github.com/joshADE",
-        "image-description":"screenshot of Re:2048"
+        "image-description":"screenshot of Re:2048",
+        "demo":"NA"
     }
     ,{
 
@@ -91,7 +97,8 @@
         "status": "complete",
         "Date-Finished": "Feb 25, 2019",
         "url-link":"https://github.com/joshADE",
-        "image-description":"screenshot of command line poker"
+        "image-description":"screenshot of command line poker",
+        "demo":"NA"
     }
     ]
 }
