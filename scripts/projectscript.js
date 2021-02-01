@@ -239,7 +239,16 @@ function loadJourney(content){
     events = events.reverse();
     for (let i = 0 ; i < events.length; i++){
         $("#journey-list").append(`          
-            <div class="journey-item"><button class="list-date accordion">${events[i].date} - ${events[i].summary}<span></span></button><div class="panel">${events[i].description}</div></div>
+            <div class="journey-item ${i % 2 === 0 ? 'right' : 'left'}">
+                <div class="content">
+                    <div class="list-date accordion">
+                        ${events[i].date} - ${events[i].summary}<span></span>
+                    </div>
+                    <div class="panel">
+                        ${events[i].description}
+                    </div>
+                </div>
+            </div>
       
         `); 
     }
