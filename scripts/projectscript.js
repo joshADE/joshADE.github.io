@@ -239,7 +239,7 @@ function loadJourney(content){
     events = events.reverse();
     for (let i = 0 ; i < events.length; i++){
         $("#journey-list").append(`          
-            <div class="journey-item ${i % 2 === 0 ? 'right' : 'left'}">
+            <div class="journey-item animation ${i % 2 === 0 ? 'right' : 'left'}">
                 <div class="content">
                     <div class="list-date accordion">
                         ${events[i].date} - ${events[i].summary}<span></span>
@@ -257,6 +257,17 @@ function loadJourney(content){
 }
 
 
+function isScrolledIntoView($elem, $window) {
+    $elem = $($elem);
+    $window = $($window);
+    var docViewTop = $window.scrollTop();
+    var docViewBottom = docViewTop + $window.height();
+
+    var elemTop = $elem.offset().top;
+    var elemBottom = elemTop + $elem.height();
+
+    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+}
 
 
 
@@ -311,7 +322,25 @@ $(document).ready(function() {
         var header = document.querySelector("#site-nav");
         header.classList.toggle("sticky", window.scrollY > 0);
      })
+
+     window.addEventListener("DOMContentLoaded", function(){
+        var header = document.querySelector("#site-nav");
+        header.classList.toggle("sticky", window.scrollY > 0);
+     })
     
+     
+
+     window.addEventListener('scroll', function(){
+        var elemsToAnimate = document.querySelectorAll('.animation');
+        
+         elemsToAnimate.forEach((elem) => {
+             console.log(elem);
+             if ((isScrolledIntoView(elem, window))){
+                 elem.classList.add('animate');
+             }
+         })
+
+     })
 
     openSection
         ({
