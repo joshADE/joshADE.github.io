@@ -5,20 +5,6 @@
         
     {
 
-        "name": "Timetable Transfer",
-        "description": "Transfers school timetable to Google Calender",
-        "details": "Uses a simple GUI inteface to read timetable content from a site and allows the user to convert it into Google Calender format.",
-        "language":"C#, WPF, Google Calendar, Web Scraping",
-        "image": "TT.PNG",
-        "Date-Began":"Jan 24, 2020",
-        "status": "complete",
-        "Date-Finished": "April 23, 2020",
-        "url-link":"https://github.com/joshADE/Timetable-Transfer",
-        "image-description":"screenshot of the applications screen",
-        "demo":"NA"
-    },
-    {
-
         "name": "Youtube Ref",
         "description": "Saves points in videos to watch later",
         "details": "A MERN stack app for managing reference points on Youtube videos",
@@ -44,6 +30,20 @@
         "url-link":"https://github.com/joshADE/Grade-Tracker",
         "image-description":"screenshot of a the main applications window",
         "demo": "https://joshade.github.io/Grade-Tracker/#/"
+    },
+    {
+
+        "name": "Timetable Transfer",
+        "description": "Transfers school timetable to Google Calender",
+        "details": "Uses a simple GUI inteface to read timetable content from a site and allows the user to convert it into Google Calender format.",
+        "language":"C#, WPF, Google Calendar, Web Scraping",
+        "image": "TT.PNG",
+        "Date-Began":"Jan 24, 2020",
+        "status": "complete",
+        "Date-Finished": "April 23, 2020",
+        "url-link":"https://github.com/joshADE/Timetable-Transfer",
+        "image-description":"screenshot of the applications screen",
+        "demo":"NA"
     },
     {
 
