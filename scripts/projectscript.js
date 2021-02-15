@@ -129,6 +129,15 @@
 
     }
 
+
+function convertToHTML(array) {
+    let result = "";
+    for (let i = 0; i < array.length; i++){
+        result += array[i];
+    }
+    return result;
+}
+
 function loadProjects(content) {
 
 	console.log("in doc ready");
@@ -179,18 +188,27 @@ function loadProjects(content) {
             
             $("#featured-projects").append(`
             <div class="featured-item" style="">
-                <img src="${pArray[i].image}"
-                class=" project-imgs" 
-                alt="${pArray[i].imageAlt}">
-                
+                <a href=${pArray[i].url} class="image-url">
+                    <div class="image-overlay">
+                        <img src="${pArray[i].image}"
+                        class=" project-imgs" 
+                        alt="${pArray[i].imageAlt}">
+                        
+                        <div class="technologies">
+                            <div class="tech-inner">
+                            ${convertToHTML(pArray[i].language.split(",").map(tech => `<div>${tech}</div>`))}
+                            </div>
+                        </div>
+                    </div>
+                </a>
                 <div class='item-caption'>
                     <h5>${pArray[i].projectName} - ${pArray[i].description} </h5>
-                    <span class='item-language'><strong>Technologies:</strong> ${pArray[i].language}</span><br>
-                
+                    
+
                       
                     <span class="item-text">${pArray[i].details}</span><br>
                     <div class='item-links'>
-                        <a href=${pArray[i].url} class='github-link'>Github</a>
+                        <a href=${pArray[i].url} class='github-link mx-2'>Github</a>
                         ${pArray[i].demo !== 'NA'? 
                         `<a href=${pArray[i].demo} class='demo-link'>Demo</a>`:""}
                     </div>
@@ -207,18 +225,10 @@ function loadProjects(content) {
         pArray = pArray.filter((p, ind) => ind > 2);
         pArray.sort((p1,p2) => p1.projectName < p2.projectName);
         pArray.forEach((proj,index) => {
-            let image = (proj.image !== 'NA')?
-            `<img class="card-img-top" src=${proj.image} alt=${proj.imageAlt} />`
-            :
-            ""
-            ;
-
-                
+   
             $("#project-cards").append(`
             <div class="card">
             
-                ${image}
-                
                 <div class="card-body">
                     <h5 class="card-title">${proj.projectName}</h5>
                     <p class="card-text">${proj.description}</p>
@@ -241,8 +251,13 @@ function loadJourney(content){
         $("#journey-list").append(`          
             <div class="journey-item animation ${i % 2 === 0 ? 'right' : 'left'}">
                 <div class="content">
-                    <div class="list-date accordion">
-                        ${events[i].date} - ${events[i].summary}<span></span>
+                    <div class="accordion">
+                        <div class="list-date">
+                            <i class="far fa-calendar"></i> ${events[i].date}
+                        </div>
+                        <div> 
+                            ${events[i].summary}
+                        </div>
                     </div>
                     <div class="panel">
                         ${events[i].description}

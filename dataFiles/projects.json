@@ -7,8 +7,8 @@
 
         "name": "Timetable Transfer",
         "description": "Transfers school timetable to Google Calender",
-        "details": "Uses a simple GUI inteface to read timetable content from the site and allows the user to convert it into Google Calender format.",
-        "language":"C#/WPF",
+        "details": "Uses a simple GUI inteface to read timetable content from a site and allows the user to convert it into Google Calender format.",
+        "language":"C#, WPF, Google Calendar, Web Scraping",
         "image": "TT.PNG",
         "Date-Began":"Jan 24, 2020",
         "status": "complete",
@@ -22,7 +22,7 @@
         "name": "Youtube Ref",
         "description": "Saves points in videos to watch later",
         "details": "An MERN stack app for managing reference points on Youtube videos",
-        "language":"Javascript/React, MongoDB, NodeJS",
+        "language":"Javascript, Express, React, MongoDB, NodeJS",
         "image": "Youtube-Ref.PNG",
         "Date-Began":"Dec 9, 2020",
         "status": "complete",
@@ -34,9 +34,9 @@
     {
 
         "name": "GPA-Tracker",
-        "description": "Helps keep track of GPA throughout a students's program",
-        "details": "Made with react and makes it easier to viualize a program map as well as track grades",
-        "language":"Javascript/React",
+        "description": "Keeps track of GPA throughout a students's program",
+        "details": "A React app that makes it easier to viualize a student's program map as well as track grades",
+        "language":"Javascript, React, LocalStorage, StyledComponents",
         "image": "gt-transfer2.PNG",
         "Date-Began":"Apr 31, 2020",
         "status": "complete",
