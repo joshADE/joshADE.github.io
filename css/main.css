@@ -722,7 +722,7 @@ body > section {
 
   .tech-items {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-around;
     margin: 30px auto;
   }
@@ -750,11 +750,15 @@ body > section {
   .tech-item-content {
     margin: 30px auto;
     width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
   }
 
   .tech-item-content svg {
-    width: 70px !important;
-    height: 70px !important;
+    width: 60px !important;
+    height: 60px !important;
     margin-right: 1rem;
     margin-bottom: 1rem;
     
@@ -767,6 +771,7 @@ body > section {
     .tech-item {
       margin-bottom: 30px;
       width: 90%;
+      height: auto;
     }
   }
 
@@ -778,7 +783,7 @@ body > section {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    padding: 50px;
+    padding: 10px;
   }
 
   @media only screen and (max-width: 760px){
@@ -824,9 +829,11 @@ body > section {
   }
 
   #link-container {
-    width: 50%;
+    width: 90%;
     margin: 0 auto;
     text-align: center;
+    display: flex;
+    justify-content: center;
   }
 
   .contact-details {
