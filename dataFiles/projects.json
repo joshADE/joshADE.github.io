@@ -21,7 +21,7 @@
 
         "name": "Youtube Ref",
         "description": "Saves points in videos to watch later",
-        "details": "An MERN stack app for managing reference points on Youtube videos",
+        "details": "A MERN stack app for managing reference points on Youtube videos",
         "language":"Javascript, Express, React, MongoDB, NodeJS",
         "image": "Youtube-Ref.PNG",
         "Date-Began":"Dec 9, 2020",
