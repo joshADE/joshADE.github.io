@@ -20,7 +20,7 @@
     {
 
         "name": "GPA-Tracker",
-        "description": "Keeps track of GPA throughout a students's program",
+        "description": "Keeps track of GPA throughout a student's program",
         "details": "A React app that makes it easier to viualize a student's program map as well as track grades",
         "language":"Javascript, React, LocalStorage, StyledComponents",
         "image": "gt-transfer2.PNG",
@@ -35,7 +35,7 @@
 
         "name": "Timetable Transfer",
         "description": "Transfers school timetable to Google Calender",
-        "details": "Uses a simple GUI inteface to read timetable content from a site and allows the user to convert it into Google Calender format.",
+        "details": "A desktop app with a simple GUI inteface to read timetable content from a website and convert it into a csv to be imported into Google Calender.",
         "language":"C#, WPF, Google Calendar, Web Scraping",
         "image": "TT.PNG",
         "Date-Began":"Jan 24, 2020",
@@ -62,7 +62,7 @@
     {
         "name": "SimplyCalc",
         "description": "Android Calculator Application",
-        "details": "A calculator made using android studio that allows for basic functions.",
+        "details": "A calculator made using Android Studio that allows for basic functions.",
         "language":"Java 8.0",
         "image": "calcpro2.jpg  ",
         "Date-Began":"NA",
@@ -76,7 +76,7 @@
 
         "name": "Re:2048",
         "description": "Sliding Tile Game",
-        "details": "A version of the popular mobile tile-based game that was released in 2015. I created it using JavaFX GUI library(most recent library) and Java. I also made a few modifications to it such as automatic resizing of the tiles, and custom tiles.",
+        "details": "A version of the popular mobile tile-based game that was released in 2015. I created it using JavaFX GUI library and Java. I also made a few modifications to it such as automatic resizing of the tiles, and custom tiles.",
         "language":"Java 8.0",
         "image": "NA",
         "Date-Began":"2016",
