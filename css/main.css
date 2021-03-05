@@ -382,7 +382,7 @@ body > section {
     object-fit: cover;
     width: 100%;
     border-radius: 10px 0px 0px 10px;
-    border-right:1px solid grey;
+    transition: all 1s ease;
   }
 
   .image-url {
@@ -391,6 +391,9 @@ body > section {
 
   .image-overlay {
     
+    border-right:1px solid grey;
+    border-radius: 10px 0px 0px 10px;
+    overflow: hidden;
     position: relative;
   }
 
@@ -411,6 +414,7 @@ body > section {
     transition: all 0.5s ease;
     background-color: var(--overlay-color-hue);
     color: #fff;
+    border-radius: 5px 0 0 5px;
   }
 
   .image-overlay:hover .technologies {
@@ -419,6 +423,7 @@ body > section {
 
   .image-overlay:hover .project-imgs {
     background-color: #fff;
+    transform: scale(1.2);
   }
 
   .tech-inner {
@@ -468,7 +473,7 @@ body > section {
   
   .github-link, .demo-link {
     border-radius: 5px;
-    border: 1px solid grey;
+    /* border: 1px solid grey; */
     padding: 5px;
     background-color:var(--primary-color2);
     color: #ccc;
@@ -493,6 +498,10 @@ body > section {
       width: 100%;
       margin-bottom: 20px;
       border-radius: 5px 5px 0px 0px;
+    }
+
+    .image-overlay {
+      border-radius: 5px 5px 0px 0px;
       border-right: none;
       border-bottom: 1px solid grey;
     }
@@ -506,6 +515,10 @@ body > section {
     .item-links { 
       width: 40%;
       margin: 0 auto;
+    }
+
+    .technologies {
+      border-radius: 5px;
     }
   
     
@@ -783,7 +796,7 @@ body > section {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    padding: 10px;
+    padding: 50px;
   }
 
 
