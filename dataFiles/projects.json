@@ -23,7 +23,7 @@
         "description": "Keeps track of GPA throughout a student's program",
         "details": "A React app that makes it easier to viualize a student's program map as well as track grades",
         "language":"Javascript, React, LocalStorage, StyledComponents",
-        "image": "gt-transfer2.PNG",
+        "image": "gt-transfer3.PNG",
         "Date-Began":"Apr 31, 2020",
         "status": "complete",
         "Date-Finished": "May 26, 2019",
