@@ -1,5 +1,8 @@
     //import { clamp, isNumeric } from './function.js';
         
+
+
+
 	let pArray = [];
 	let projects;
     const imgPath = "images/";
@@ -293,6 +296,20 @@ $(document).ready(function() {
     $.getJSON("dataFiles/skills.json", loadSkills);
 
     $.getJSON("dataFiles/journey.json", loadJourney);
+
+    const toggleViewCoursesBtns = document.querySelectorAll(".toggle-view-courses");
+
+    toggleViewCoursesBtns.forEach(btn => {
+        btn.addEventListener("click", () => {
+            const courseList = btn.parentElement.querySelector(".course-list");
+            const chevronUp = btn.querySelector(".fa-chevron-up");
+            const chevronDown = btn.querySelector(".fa-chevron-down");
+    
+            courseList.classList.toggle("hide-list");
+            chevronUp.classList.toggle("hide-icon");
+            chevronDown.classList.toggle("hide-icon");
+        });
+    })
 
     accourdian();
     
