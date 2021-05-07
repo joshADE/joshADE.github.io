@@ -32,6 +32,19 @@
         "demo": "https://joshade.github.io/Grade-Tracker/#/"
     },
     {
+        "name": "Habitly",
+        "description": "Landing Page",
+        "details": "A fictional landing page for a web/mobile app that tracks health related habits",
+        "language": "HTML, CSS, Bootstrap, JavaScript",
+        "image": "Habitly.PNG",
+        "Date-Began": "May 3, 2021",
+        "status": "partially-complete",
+        "Date-Finished": "ongoing",
+        "url-link": "https://github.com/joshADE/Habit-Tracking-Landing-Page",
+        "image-description": "screenshot of Habitly landing page",
+        "demo": "https://joshade.github.io/Habit-Tracking-Landing-Page/"
+    },
+    {
 
         "name": "Timetable Transfer",
         "description": "Transfers school timetable to Google Calender",
