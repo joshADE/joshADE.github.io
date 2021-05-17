@@ -474,15 +474,27 @@ body > section {
   
   .item-links a:hover {
     text-decoration: none;
-    color: #fff;
   }
   
   .github-link, .demo-link {
-    border-radius: 5px;
+    border-radius: 10px;
     /* border: 1px solid grey; */
-    padding: 5px;
+    padding: 5px 10px;
     background-color:var(--primary-color2);
-    color: #ccc;
+    color: #fff;
+    border: 1px solid #fff;
+  }
+
+  .github-link:hover {
+    color: var(--primary-color2);
+    border: 1px solid var(--primary-color2);
+    background-color: #fff;
+  }
+  
+  .demo-link:hover {
+    color: var(--primary-color3);
+    border: 1px solid var(--primary-color3);
+    background-color: #fff;
   }
   
   .demo-link {
