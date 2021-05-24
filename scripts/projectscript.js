@@ -211,9 +211,9 @@ function loadProjects(content) {
                       
                     <span class="item-text">${pArray[i].details}</span><br>
                     <div class='item-links'>
-                        <a href=${pArray[i].url} class='github-link mr-2'><i class="fab fa-github"></i><span>Code</span></a>
+                        <a href=${pArray[i].url} target='_blank' class='github-link mr-2'><i class="fab fa-github"></i><span>Code</span></a>
                         ${pArray[i].demo !== 'NA'? 
-                        `<a href=${pArray[i].demo} class='demo-link'><i class="fas fa-external-link-alt"></i><span>Demo</span></a>`:""}
+                        `<a href=${pArray[i].demo} target='_blank' class='demo-link'><i class="fas fa-external-link-alt"></i><span>Demo</span></a>`:""}
                     </div>
                 </div>
                 
@@ -236,7 +236,7 @@ function loadProjects(content) {
                     <h5 class="card-title">${proj.projectName}</h5>
                     <p class="card-text">${proj.description}</p>
                     <p class="card-text"><small class="text-muted">Technologies:${proj.language}</small></p>
-                    <a href="${proj.url}" class="card-link"><i class="fab fa-github"></i> See on Github</a>
+                    <a href="${proj.url}" target='_blank' class="card-link"><i class="fab fa-github"></i> See on Github</a>
                 </div>
             
             </div>`
