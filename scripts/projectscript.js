@@ -211,9 +211,9 @@ function loadProjects(content) {
                       
                     <span class="item-text">${pArray[i].details}</span><br>
                     <div class='item-links'>
-                        <a href=${pArray[i].url} class='github-link mr-2'>Github</a>
+                        <a href=${pArray[i].url} class='github-link mr-2'><i class="fab fa-github"></i><span>Code</span></a>
                         ${pArray[i].demo !== 'NA'? 
-                        `<a href=${pArray[i].demo} class='demo-link'>Demo</a>`:""}
+                        `<a href=${pArray[i].demo} class='demo-link'><i class="fas fa-external-link-alt"></i><span>Demo</span></a>`:""}
                     </div>
                 </div>
                 
