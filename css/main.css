@@ -755,33 +755,55 @@ body > section {
   }
 
   .school-info {
-    padding-top: 5px;
+    padding-top: 15px;
     padding-left: 15px;
   }
 
-  .program-name::after {
+  .school-header {
     position: relative;
-    top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .school-header-text {
+    position: relative;
+    
+    z-index: 1;
+  }
+
+  .school-header-text::after {
+    position: absolute;
+    top: 100%;
     display: block;
     content: " ";
-    width: 85%;
-    min-width: 300px;
+    width: 60%;
+    min-width: 200px;
     max-width: 700px;
     height: 3px;
     background-color:#fff;
   }
 
+  .school-logo {
+    width: 100px;
+    position: absolute;
+    top: 0;
+    right:0;
+  }
+
   .toggle-view-courses {
-    background-color: #fff;
-    border-radius: 10px;
+    background-color: transparent;
+    border: none;
+    border-bottom:3px solid #fff;
+    color: #fff;
+    outline: none;
     padding: 5px 10px;
-    border: 1px solid black;
     display: inline-block;
     outline: none;
   }
 
   .toggle-view-courses:hover {
-    background-color: #ccc;
+    background-color: transparent;
   }
 
   .course-list {
