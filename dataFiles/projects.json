@@ -2,13 +2,26 @@
 "cataloge":
 {
     "projects": [
-        
+    {
+
+        "name": "Appointments Express",
+        "description": "Appointment Management App",
+        "details": "An app for stores owners to manage appointment bookings",
+        "language":"TypeScript, React, Redux Toolkit, RTK Query, TailwindCSS, C#/.NET Core, PostgreSQL",
+        "image": "AE.PNG",
+        "Date-Began":"Jun 14, 2021",
+        "status": "in-progress",
+        "Date-Finished": "in-progress",
+        "url-link":"https://github.com/joshADE/appointments-express-frontend",
+        "image-description":"screenshot of a main app dashboard",
+        "demo":"https://appointments-express.netlify.app/"
+    },
     {
 
         "name": "Youtube Ref",
         "description": "Saves points in videos to watch later",
         "details": "A MERN stack app for managing reference points on Youtube videos",
-        "language":"Javascript, Express, React, MongoDB, NodeJS, Redux Toolkit",
+        "language":"JavaScript, Express, React, MongoDB, NodeJS, Redux Toolkit",
         "image": "Youtube-Ref.PNG",
         "Date-Began":"Dec 9, 2020",
         "status": "complete",
@@ -22,7 +35,7 @@
         "name": "GPA-Tracker",
         "description": "Keeps track of GPA throughout a student's program",
         "details": "A React app that makes it easier to viualize a student's program map as well as track grades",
-        "language":"Javascript, React, LocalStorage, StyledComponents, Redux",
+        "language":"JavaScript, React, LocalStorage, StyledComponents, Redux",
         "image": "gt-transfer3.PNG",
         "Date-Began":"Apr 31, 2020",
         "status": "complete",
